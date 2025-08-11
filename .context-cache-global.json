@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "notebook": "DSA",
+      "filename": "hdhdh",
+      "extension": "",
+      "preview": "#include <iostream>\r\nusing namespace std;\r\n\r\nint main(){\r\n  int n;\r\n  cin>>n;\r\n  cout<<n;\r\n}",
+      "fileId": "68906bd186ae3ad0e9435e86",
+      "createdAt": "2025-08-04T08:14:09.963Z"
+    },
+    {
+      "notebook": "DM",
+      "filename": "Sample",
+      "extension": "",
+      "preview": "#include<iostream>\r\nusing namespace std;\r\n\r\nint main(){\r\n  cout<<\"Hello Dhruv\"<<\" \";\r\n}",
+      "fileId": "688cfb041dec17ba757502d3",
+      "createdAt": "2025-08-01T17:36:04.442Z"
+    },
+    {
+      "notebook": "DSA",
+      "filename": "krishna",
+      "extension": "",
+      "preview": "print(\"hello world\")",
+      "fileId": "688afc751d80c7404fe0677a",
+      "createdAt": "2025-07-31T05:17:41.815Z"
+    },
+    {
+      "notebook": "DSA",
+      "filename": "bfs",
+      "extension": "",
+      "preview": "#include <iostream>\r\n#include <vector>\r\n#include <queue>\r\nusing namespace std;\r\n\r\nvoid bfs(int start, const vector<vector<int>>& adjList, int n) {\r\n    vector<bool> visited(n + 1, false);\r\n    queue<int> q;\r\n\r\n    visited[start] = true;\r\n    q.push(start);\r\n\r\n    while (!q.empty()) {\r\n        int node = q.front();\r\n        q.pop();\r\n        cout << node << \" \";\r\n\r\n        for (int neighbor : adjList[node]) {\r\n            if (!visited[neighbor]) {\r\n                visited[neighbor] = true;\r\n                q.push(neighbor);\r\n            }\r\n        }\r\n    }\r\n    cout << endl;\r\n}\r\n\r\nint main() {\r\n    int n = 5; // number of nodes\r\n    vector<vector<int>> adjList(n + 1); // 1-based indexing\r\n\r\n    // Hardcoded edges (undirected graph)\r\n    adjList[1] = {2, 3};\r\n    adjList[2] = {1, 4};\r\n    adjList[3] = {1, 5};\r\n    adjList[4] = {2};\r\n    adjList[5] = {3};\r\n\r\n    int start = 1; // Starting node for BFS\r\n\r\n    bfs(start, adjList, n);\r\n\r\n    return 0;\r\n}\r\n",
+      "fileId": "6889702bf450d3195bd3e5c1",
+      "createdAt": "2025-07-30T01:06:51.896Z"
+    },
+    {
+      "notebook": "DSA",
+      "filename": "concept",
+      "extension": "",
+      "preview": "#include <iostream>\r\n#include <vector>\r\n#include <queue>\r\nusing namespace std;\r\n\r\nvoid bfs(int start, const vector<vector<int>>& adjList, int n) {\r\n    vector<bool> visited(n + 1, false);\r\n    queue<int> q;\r\n\r\n    visited[start] = true;\r\n    q.push(start);\r\n\r\n    while (!q.empty()) {\r\n        int node = q.front();\r\n        q.pop();\r\n        cout << node << \" \";\r\n\r\n        for (int neighbor : adjList[node]) {\r\n            if (!visited[neighbor]) {\r\n                visited[neighbor] = true;\r\n                q.push(neighbor);\r\n            }\r\n        }\r\n    }\r\n    cout << endl;\r\n}\r\n\r\nint main() {\r\n    int n = 5; // number of nodes\r\n    vector<vector<int>> adjList(n + 1); // 1-based indexing\r\n\r\n    // Hardcoded edges (undirected graph)\r\n    adjList[1] = {2, 3};\r\n    adjList[2] = {1, 4};\r\n    adjList[3] = {1, 5};\r\n    adjList[4] = {2};\r\n    adjList[5] = {3};\r\n\r\n    int start = 1; // Starting node for BFS\r\n\r\n    bfs(start, adjList, n);\r\n\r\n    return 0;\r\n}\r\n",
+      "fileId": "68896ddbf450d3195bd3e53f",
+      "createdAt": "2025-07-30T00:56:59.644Z"
+    },
+    {
+      "notebook": "DSA",
+      "filename": "BFS",
+      "extension": "",
+      "preview": "#include <iostream>\r\n#include <vector>\r\n#include <queue>\r\nusing namespace std;\r\n\r\nvoid bfs(int start, const vector<vector<int>>& adjList, int n) {\r\n    vector<bool> visited(n + 1, false);\r\n    queue<int> q;\r\n\r\n    visited[start] = true;\r\n    q.push(start);\r\n\r\n    while (!q.empty()) {\r\n        int node = q.front();\r\n        q.pop();\r\n        cout << node << \" \";\r\n\r\n        for (int neighbor : adjList[node]) {\r\n            if (!visited[neighbor]) {\r\n                visited[neighbor] = true;\r\n                q.push(neighbor);\r\n            }\r\n        }\r\n    }\r\n    cout << endl;\r\n}\r\n\r\nint main() {\r\n    int n = 5; // number of nodes\r\n    vector<vector<int>> adjList(n + 1); // 1-based indexing\r\n\r\n    // Hardcoded edges (undirected graph)\r\n    adjList[1] = {2, 3};\r\n    adjList[2] = {1, 4};\r\n    adjList[3] = {1, 5};\r\n    adjList[4] = {2};\r\n    adjList[5] = {3};\r\n\r\n    int start = 1; // Starting node for BFS\r\n\r\n    bfs(start, adjList, n);\r\n\r\n    return 0;\r\n}\r\n",
+      "fileId": "6888a9fb6cddd962dd183d7c",
+      "createdAt": "2025-07-29T11:01:15.569Z"
+    }
+  ],
+  "lastUpdated": "2025-08-04T08:15:12.999Z",
+  "totalFiles": 6
+}
